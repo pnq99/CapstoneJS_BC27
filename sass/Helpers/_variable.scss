@@ -1,0 +1,70 @@
+$color-green: #275c53;
+$color-dark-1: #333;
+$color-dark-2: #656774;
+$color-dark-3: #8c8e8e;
+$color-white-1: #f5f9fe;
+$color-white-2: #e2ebfc;
+$color-white-3: #fff;
+$color-blue-1: #1d365e;
+$color-blue-2: #2a73dd;
+$color-blue-3: #c9d8f4;
+$color-yellow-1: #e2bb53;
+
+
+//font size
+$fs-0: 12px;
+$fs-1: 14px;
+$fs-2: 16px;
+$fs-3: 20px;
+$fs-4: 70px;
+$fs-5: 50px;
+$fs-6: 2.25rem;
+$fs-7: 18px;
+$fs-8: 44px;
+//font weight
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+
+//letter spacing
+$ls-0: normal;
+$ls-1: .5px;
+$ls-2: 1px;
+
+//Padding
+$pd-1: 15px;
+$pd-2: 20px;
+$pd-3: 30px;
+$pd-4: 40px;
+$pd-5: 100px;
+$pd-6: 8px;
+$pd-7: 60px;
+$pd-8: 150px;
+$pd-10: 10px;
+//Margin
+
+$mg-1: 15px;
+$mg-2: 25px;
+$mg-3: 30px;
+$mg-4: 60px;
+$mg-5: 5px;
+
+//border
+$bd-1:  2px solid #275c53;
+$bd-2: 8px;
+
+$bd-r-0: 0;
+$bd-r-50: 50%;
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+  "extra-large-down": 1199.98px,
+  "large-down": 991.98px,
+  "medium-down": 767.98px,
+  "small-down": 575.98px,
+);

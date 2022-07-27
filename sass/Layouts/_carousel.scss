@@ -1,0 +1,67 @@
+.breadcrumb-area {
+  background-image: url(https://cdn.shopify.com/s/files/1/0569/2591/3250/files/breadcrumb.jpg);
+  position: relative;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+  }
+  .container {
+    max-width: 1240px;
+    padding-right: 15px;
+    padding-left: 15px;
+    & .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -$mg-1;
+        margin-left: -$mg-1;
+    
+        & .col {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          & .breadcrumb-title {
+            margin-bottom: $mg-1;
+            @include styleText($fs-5, $fw-2, $color-white-3);
+            line-height: normal;
+            font-family: Josefin Sans, sans-serif;
+          }
+          & .breadcrumb-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            & .breadcrumb-item {
+              position: relative;
+              &:last-child {
+                &::before {
+                  content: none;
+                }
+              }
+              & a {
+                text-transform: uppercase;
+                @include styleText($fs-1, $fw-2, $color-white-3);
+              }
+              & i {
+                margin: 0 5px;
+                color: $color-white-3;
+              }
+              & span {
+                text-transform: uppercase;
+                @include styleText($fs-1, $fw-2, $color-white-3);
+              }
+            }
+          }
+        }
+      }
+  }
+ 
+}

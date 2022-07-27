@@ -1,0 +1,29 @@
+.markup-img img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.modal-dialog {
+  max-width: 680px;
+}
+
+.form-group {
+  margin: 0;
+}
+
+.notificationSpan {
+  display: inline-block;
+  color: tomato;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 4px;
+}

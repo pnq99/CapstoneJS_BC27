@@ -1,0 +1,129 @@
+.shopify-section-footer {
+  & .footer-top-area {
+    background-image: url(//cdn.shopify.com/s/files/1/0569/2591/3250/files/Footer_b597fc64-5ac3-4f1f-b513-1ce0952a24c2.png?v=1622385548);
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    & .footer-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 70px;
+      & .footer-info {
+        width: 37.5%;
+        & .theme-logo {
+          & img {
+            width: 60%;
+            margin-bottom: 20px;
+          }
+        }
+
+        & .social-icon {
+          margin-top: 22px;
+          display: flex;
+          & li {
+            padding-right: 15px;
+            & a {
+              @include styleText($fs-1, $fw-1, $color-white-3);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 35px;
+              height: 35px;
+              border: 1px solid $color-white-3;
+              border-radius: 100%;
+              background: $color-green;
+              border-color: $color-green;
+              &:hover {
+                background: $color-yellow-1;
+                border-color: $color-yellow-1;
+              }
+            }
+          }
+        }
+      }
+      & .linklist {
+        width: 25%;
+        & .footer-sublist {
+            margin-top: -$mg-1;
+          & .ftsublink-li {
+            position: relative;
+            padding-left: $pd-1;
+            margin-top: $mg-1;
+            & a {
+              @include styleText($fs-1, $fw-1, $color-dark-1);
+              &::after {
+                content: "";
+                position: absolute;
+                transform: translateY(50%);
+                bottom: 50%;
+                left: 0;
+                height: 5px;
+                width: 5px;
+                border-radius: 100%;
+                background-color: #222;
+              }
+              &:hover {
+                color: $color-green;
+              }
+            }
+          }
+        }
+      }
+      & .newsletter {
+        width: 37.5%;
+        & .payment-icon {
+          display: flex;
+          margin-top: 30px;
+          & img {
+            margin-right: 5px;
+          }
+        }
+        & .news-content {
+          margin-top: $mg-2;
+          & .subscribe-block {
+            display: flex;
+            & input {
+              width: 100%;
+              background-color: $color-white-3;
+              border: 0;
+            }
+          }
+        }
+        & h6 {
+          @include styleText($fs-2, $fw-3, $color-dark-1);
+        }
+        & .btn-style-medium {
+          @include styleText($fs-2, $fw-2, $color-white-3);
+          text-transform: uppercase;
+          width: 100%;
+          @include styleButton(
+            $color-green,
+            $pd-1,
+            $pd-4,
+            $bd-1,
+            $bd-r-0,
+            $ls-1
+          );
+          &:hover {
+            background: $color-yellow-1;
+            border-color: $color-yellow-1;
+          }
+        }
+      }
+    }
+  }
+}
+.shopify-section {
+  & .footer-bottom-area {
+    padding-top: $pd-1;
+    padding-bottom: $pd-1;
+    background-color: $color-yellow-1;
+    & .ft-ft-bottom {
+      text-align: center;
+      @include styleText($fs-2, $fw-1, $color-white-3);
+    }
+  }
+}

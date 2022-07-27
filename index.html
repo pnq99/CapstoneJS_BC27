@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+     <!--  -->
+    <section class="header">
+      <div class="container">
+        <p>20% OFF ON MEDICAL CANNABIS | FREE SHIPPING OVER $40</p>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section class="menu" id="header">
+      <div class="menu-area">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <div class="menu-main">
+              <div class="menu-logo">
+                <a href="/" class="theme-logo">
+                  <img src="./assets/img/esrar-logo-01.webp" />
+                </a>
+              </div>
+              <div class="menu-list">
+                <div class="main-wrap">
+                  <ul class="main-menu">
+                    <li class="menu-link">
+                      <a class="link-title">
+                        <span>Home </span>
+                      </a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="link-title">
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="link-title">
+                        <span>Collection</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="link-title">
+                        <span>Pages</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    </li>
+                    <li class="menu-link">
+                      <a class="link-title">
+                        <span>Contact Us</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="right-blockbox">
+                <ul class="shop-element">
+                  <a class="side-wrap user-mobile" href="/account">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                  <li class="side-wrap search-wrap">
+                    <a class="search-crap">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                  <li class="side-wrap user-wrap">
+                    <div class="acc-desk">
+                      <div class="acc-re-lo">
+                        <a href="/account/login">Login</a>
+                        <a href="/account/register">Register</a>
+                      </div>
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </li>
+                  <li class="side-wrap wishlist-wrap">
+                    <div class="wishlist">
+                      <a class="header-wishlist">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="wishlist-counter">0</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="side-wrap cart-wrap">
+                    <div class="shopping-widget">
+                      <a class="cart-count">
+                        <span class="cart-icon">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <span id="wishlist-counter" class="wishlist-counter"></span>
+                        </span>
+                      </a>
+                      <div class="mini-cart">
+                        <div class="cart-tempty-title" id="cart-tempty-title">
+                          <p>No products in the cart.</p>
+                          <ul class="cart-item-loop-empty">
+                            <li class="cart-item-empty">
+                              <span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                              </span>
+                              <a href="/collections/all" class="btn btn-style2"
+                                >Continue shopping</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="cart-item-title" id="cart-item-title">
+                          <p>
+                            <span class="cart-count-desc">There are</span>
+                            <span id="cart-total" class="cart-count-item bigcounter"></span>
+                            <span class="cart-count-desc">products</span>
+                          </p>
+                        </div>
+                        <ul class="cart-item-loop" id="cart-item-loop">
+                        </ul>
+                        <ul class="subtotal-title-area" id="subtotal">
+                          <li class="subtotal-info">
+                            <div class="subtotal-titles">
+                              <h3>Sub Total:</h3>
+                              <span id="cart-sub-total" class="subtotal-price"></span>
+                            </div>
+                          </li>
+                          <li class="mini-cart-btns">
+                            <div class="cart-btns" id="cart-btns">
+                              <a class="btn btn-style">View Cart</a>
+                              <a class="btn btn-style2" onclick="Pay()">Pay</a>
+                            </div>
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="breadcrumb-area">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="breadcrumb-title">Esrar Shop</h2>
+            <ul class="breadcrumb-list">
+              <li class="breadcrumb-item">
+                <a href="/" title="Back to the home page">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li class="breadcrumb-item">
+                <span>Products</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shopify-section">
+      <div class="main-content-wrap shop-page section-ptb">
+        <div class="container">
+          <div class="row position-left">
+            <div class="col-lg-9 col-md-8 col-12 pro-grli-wrap right-column">
+              <div class="collection-main-bg">
+                <img
+                  src="//cdn.shopify.com/s/files/1/0569/2591/3250/files/Ad.jpg?v=1622384879"
+                />
+              </div>
+              <div class="shop-top-bar">
+                <div class="product-short">
+                  <label for="SortBy">Sort by</label>
+                  <select class="nice-select" sortby="sortby" id="SortBy">
+                    
+                    <option value="Iphone">Iphone</option>
+                    <option value="Samsung">Samsung</option>
+                  </select>
+                </div>
+              </div>
+              <div class="get-data-products">
+                <div class="product-grid-view">
+                  <div class="shop-product-wrap grid-2">
+                    <div class="row">
+                      <div class="col">
+                        <ul class="product-view" id="tblProduct">
+                          <input type="text" id="MaSP" value="" hidden />
+                          <a class="cart-title" id="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 pro-grli-wrap left-column">
+              <div class="shop-sidebar-wrap">
+                <div class="shop-sidebar-inner">
+                  <div class="shop-sidebar sidebar-wedget">
+                    <h6 class="title" style="display: none">Categories</h6>
+                    <a
+                      class="title"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      >Categories</a
+                    >
+                    <div class="scroll-top" id="collapseExample">
+                      <ul class="scrollbar">
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Accessories"
+                          /><a
+                            href="/collections/accessories"
+                            class="cust-checkbox-label"
+                            title="Accessories"
+                          >
+                            <span class="filter-name">Accessories</span>
+                            <span class="count-check"> 03 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Cannabis"
+                          /><a
+                            href="/collections/cannabis"
+                            class="cust-checkbox-label"
+                            title="Cannabis"
+                          >
+                            <span class="filter-name">Cannabis</span>
+                            <span class="count-check"> 04 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="CBD Bottles"
+                          /><a
+                            href="/collections/cbd-bottles"
+                            class="cust-checkbox-label"
+                            title="CBD Bottles"
+                          >
+                            <span class="filter-name">CBD Bottles</span>
+                            <span class="count-check"> 04 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="CBD Oils"
+                          /><a
+                            href="/collections/cbd-oils"
+                            class="cust-checkbox-label"
+                            title="CBD Oils"
+                          >
+                            <span class="filter-name">CBD Oils</span>
+                            <span class="count-check"> 04 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Concentrates"
+                          /><a
+                            href="/collections/concentrates"
+                            class="cust-checkbox-label"
+                            title="Concentrates"
+                          >
+                            <span class="filter-name">Concentrates</span>
+                            <span class="count-check"> 03 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Dispensary"
+                          /><a
+                            href="/collections/dispensary"
+                            class="cust-checkbox-label"
+                            title="Dispensary"
+                          >
+                            <span class="filter-name">Dispensary</span>
+                            <span class="count-check"> 03 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Flowers"
+                          /><a
+                            href="/collections/flowers"
+                            class="cust-checkbox-label"
+                            title="Flowers"
+                          >
+                            <span class="filter-name">Flowers</span>
+                            <span class="count-check"> 03 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Home Page"
+                          /><a
+                            href="/collections/frontpage"
+                            class="cust-checkbox-label"
+                            title="Home Page"
+                          >
+                            <span class="filter-name">Home Page</span>
+                            <span class="count-check"> 04 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Medical Products"
+                          /><a
+                            href="/collections/medical-products"
+                            class="cust-checkbox-label"
+                            title="Medical Products"
+                          >
+                            <span class="filter-name">Medical Products</span>
+                            <span class="count-check"> 05 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <input
+                            type="checkbox"
+                            class="cust-checkbox"
+                            name="Souvenirs"
+                          /><a
+                            href="/collections/souvenirs"
+                            class="cust-checkbox-label"
+                            title="Souvenirs"
+                          >
+                            <span class="filter-name">Souvenirs</span>
+                            <span class="count-check"> 03 </span>
+                            <span class="cust-check"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="banner-block">
+                    <a href="/collections/cbd-bottles" class="banner-hover">
+                      <img
+                        class="img-fluid"
+                        src="//cdn.shopify.com/s/files/1/0569/2591/3250/files/offer2.jpg?v=1622360475"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shopify-section-footer">
+      <div class="footer-top-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12 col-center">
+              <div class="footer-list-wrap">
+                <ul class="footer-list">
+                  <li class="ftlink-li footer-info">
+                    <a href="/" class="theme-logo">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0569/2591/3250/files/esrar-logo-01.png?v=1622385139"
+                        alt="esrar-shop"
+                      />
+                    </a>
+                    <p class="about-company">
+                      It is a long established fact that a reader will be
+                      distracted the readable layout.
+                    </p>
+                    <ul class="social-icon">
+                      <li>
+                        <a href="http://www.facebook.com">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="http://www.twitter.com">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="http://www.youtube.com">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="http://www.instagram.com">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+
+                      <li class="">
+                        <a href="http://www.paintrest.com">
+                          <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="ftlink-li linklist">
+                    <ul class="footer-sublist">
+                      <li class="ftsublink-li">
+                        <a href="/pages/about-us" class="ft-sublink"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class="ftsublink-li">
+                        <a href="/pages/contact-us" class="ft-sublink"
+                          >Contact Us</a
+                        >
+                      </li>
+                      <li class="ftsublink-li">
+                        <a href="/pages/faqs-1" class="ft-sublink">FAQs</a>
+                      </li>
+                      <li class="ftsublink-li">
+                        <a href="/pages/privacy-policy" class="ft-sublink"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="ftsublink-li">
+                        <a href="/pages/payment-policy" class="ft-sublink"
+                          >Payment Policy</a
+                        >
+                      </li>
+                      <li class="ftsublink-li">
+                        <a href="/pages/faqs" class="ft-sublink"
+                          >Terms &amp; Condition</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="ftlink-li newsletter">
+                    <h6>Subscribe Newsletter</h6>
+                    <div class="news-content">
+                      <div class="subscribe-block">
+                        <input type="email" placeholder="Enter Your Email" />
+                        <div class="email-submit">
+                          <button
+                            type="submit"
+                            class="btn btn-style-medium"
+                            name="commit"
+                            id="Subscribe"
+                          >
+                            Subscribe
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="payment-icon">
+                      <img
+                        src="./assets/img/p5.webp"
+                        class="img-fluid"
+                        alt="esrar-shop"
+                      />
+                      <img
+                        src="./assets/img/p1.webp"
+                        class="img-fluid"
+                        alt="esrar-shop"
+                      />
+                      <img
+                        src="./assets/img/p2.webp"
+                        class="img-fluid"
+                        alt="esrar-shop"
+                      />
+                      <img
+                        src="./assets/img/p3.webp"
+                        class="img-fluid"
+                        alt="esrar-shop"
+                      />
+                      <img
+                        src="./assets/img/p4.webp"
+                        class="img-fluid"
+                        alt="esrar-shop"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shopify-section">
+      <div class="footer-bottom-area">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="ft-ft-bottom">
+                <span>Copyright</span>
+                <i class="fa fa-copyright"></i>
+                <span>2021 qodex all rights reserved</span>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/headerFix.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./app/services/ProductAPI.js"></script>
+    <script src="./app/models/Product.js"></script>
+    <script src="./app/controllers/main.js"></script>
+  </body>
+</html>
